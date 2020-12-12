@@ -1,0 +1,6 @@
+Hola soy un archivo de texto,
+recordemos que lee linea por linea,
+por ende si no leo este archivo dentro de un
+bucle hasta el final de este mismo archivo
+solo nos mostrará la primer linea.
+soy un texto metido desde phpsoy un texto metido desde phpsoy un texto metido desde phpsoy un texto metido desde phpsoy un texto metido desde phpsoy un texto metido desde phpsoy un texto metido desde phpsoy un texto metido desde phpsoy un texto metido desde phpsoy un texto metido desde phpsoy un texto metido desde phpsoy un texto metido desde phpsoy un texto metido desde phpsoy un texto metido desde phpsoy un texto metido desde php
