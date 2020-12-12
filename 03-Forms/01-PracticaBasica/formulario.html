@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--
+Desde este formulario vamos a enviar toda la información requerida
+para interactuar con nuestro servidor.
+-->
+<html>
+    <head>
+        <title>Formulario HTML</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <form action='guardar.php' method="POST">
+                <label for='title'>Título: </label>
+                <p><input type="text" name="title" /></p>
+                <label for='description'>Descripción: </label><br/>
+                <textarea name='description'></textarea><br/>
+                <p><input type='submit' value='Enviar' /></p>
+            </form>
+        </div>
+    </body>
+</html>
