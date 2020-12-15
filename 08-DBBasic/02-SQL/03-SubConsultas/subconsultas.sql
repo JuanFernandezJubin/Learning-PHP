@@ -46,7 +46,29 @@ WHERE id IN (
 );
 
 # Mostrar los usuarios que crearon un posts un Martes
+SELECT nombre,apellidos 
+FROM usuarios
+WHERE id IN (
+    SELECT usuario_id
+    FROM posts
+    WHERE DAYOFWEEK(fecha) = 3
+);
 
 # Mostrar el nombre del usuario que tenga mas posts
+SELECT nombre 
+FROM usuarios 
+WHERE id = (
+    SELECT COUNT(id) 
+    FROM posts 
+    GROUP BY usuario_id 
+    ORDER BY COUNT(id) 
+    DESC LIMIT 1
+);
 
 # Mostrar las categorías sin posts
+SELECT nombre
+FROM categorias
+WHERE id NOT IN(
+    SELECT categoria_id 
+    FROM posts
+);
